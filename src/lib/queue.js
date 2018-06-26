@@ -7,7 +7,8 @@ module.exports = class Queue {
   constructor() {
     // in this example implementation, I'm using an array
     // in your implementation, this will be a Linked List
-    this.storage = [];
+    this.queue = new LinkedList();
+    this.length = 0;
   }
 
   enqueue(value) {
