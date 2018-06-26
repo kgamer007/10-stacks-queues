@@ -1,0 +1,40 @@
+{
+  "name": "10-stacks-queues",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) Lab 10 - Stacks and Queues Data Structures\r ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && jest --coverage",
+    "testWatch": "jest --coverage --watchAll",
+    "test-nolint": "jest --coverage",
+    "lint": "eslint .",
+    "start": "node index.js",
+    "dev-start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgamer007/10-stacks-queues.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgamer007/10-stacks-queues/issues"
+  },
+  "homepage": "https://github.com/kgamer007/10-stacks-queues#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.2.0",
+    "nodemon": "^1.17.5",
+    "superagent": "^3.8.3",
+    "uuid": "^3.3.0"
+  }
+}
