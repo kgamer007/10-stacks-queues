@@ -8,6 +8,7 @@ module.exports = class LinkedList {
     this.tail = null;
   }
 
+  // this is a 
   insertAtHead(value) {
     const node = new Node(value);
     node.next = this.head;
@@ -29,6 +30,15 @@ module.exports = class LinkedList {
 
     currentNode.next = node;
     return this;
+  }
+
+  shift() {
+    if (!this.head) {
+      return null;
+    }
+    let temp = this.head;
+    this.head = this.head.next;
+    return temp;
   }
 
   find(value) {
