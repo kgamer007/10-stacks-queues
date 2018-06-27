@@ -12,18 +12,31 @@ module.exports = class Queue {
   }
 
   enqueue(value) {
-    this.storage.unshift(value);
+    this.length += 1;
+    this.queue.insertAtEnd(value);
+    this.head = this.queue.head.value;
+
+    return this.length;
   }
 
   dequeue() {
-    return this.storage.pop();
+    if (!this.queue.head) {
+      return null;
+    }
+    this.length -= 1;
+    const subtractQueue = this.queue.shift().value;
+    return subtractQueue;
   }
 
   peek() {
-    return this.storage[this.storage.length - 1];
+    if (!this.queue.head) {
+      return null;
+    }
+    return this.queue.head.value;
   }
 
-  isEmpty() {
-    return !this.storage.length;
-  }
+  // isEmpty() {
+  //   return !this.storage.length;
+  // }
+  // this method is optional
 };
