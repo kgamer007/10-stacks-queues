@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kgamer007/10-stacks-queues.svg?branch=master)](https://travis-ci.org/kgamer007/10-stacks-queues)
+
 ![cf](http://i.imgur.com/7v5ASc8.png) Lab 10 - Stacks and Queues Data Structures
 ====
 
