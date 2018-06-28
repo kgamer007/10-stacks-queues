@@ -8,7 +8,6 @@ module.exports = class LinkedList {
     this.tail = null;
   }
 
-  // this is a 
   insertAtHead(value) {
     const node = new Node(value);
     node.next = this.head;
@@ -36,7 +35,7 @@ module.exports = class LinkedList {
     if (!this.head) {
       return null;
     }
-    let temp = this.head;
+    const temp = this.head;
     this.head = this.head.next;
     return temp;
   }
@@ -90,6 +89,22 @@ module.exports = class LinkedList {
       currentNode = currentNode.next;
     }
     return null;
+  }
+
+  findLast() {
+    let current = this.head;
+
+    if (!this.head) {
+      return null;
+    }
+
+    while (current) {
+      if (current.next === null) {
+        return current.value; 
+      }
+      current = current.next;
+    }
+    return undefined;
   }
 
   remove(value) {

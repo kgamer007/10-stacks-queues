@@ -32,7 +32,7 @@ describe('testing linked list', () => {
     expect(testList.head.next.value).toEqual(6);
     expect(testList.head.next.next.value).toEqual(5);
 
-    inspect(testList, 'INSERT AT HEAD');
+    // inspect(testList, 'INSERT AT HEAD');
   });
 
   test('#insertAtEnd', () => {
@@ -47,7 +47,7 @@ describe('testing linked list', () => {
     expect(testList.head.value).toEqual(5);
     expect(testList.head.next.value).toEqual(6);
     expect(testList.head.next.next.value).toEqual(7);
-    inspect(testList, 'INSERT AT END');
+    // inspect(testList, 'INSERT AT END');
   });
 
   test('#find', () => {

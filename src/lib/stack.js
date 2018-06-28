@@ -4,20 +4,18 @@ const LinkedList = require('./linked-list');
 
 module.exports = class Stack {
   constructor() {
-    this.stack = new LinkedList();
-    this.top = null;
-    this.length = 0;
+    this.storage = new LinkedList();
   }
 
   push(value) {
-
+    this.storage.insertAtEnd(value);
   }
 
   pop() {
-
+    return this.storage.pop();
   }
 
   peek() {
-
+    return this.storage.findLast();
   }
-}
+};
