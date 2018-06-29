@@ -18,7 +18,7 @@ module.exports = class Queue {
   }
 
   peek() {
-    return this.storage.findLast();
+    return this.storage.head;
   }
 
   // isEmpty() {
